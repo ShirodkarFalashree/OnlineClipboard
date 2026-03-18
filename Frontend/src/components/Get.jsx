@@ -46,7 +46,7 @@ function Get() {
   const [data, setData] = useState(null);
 
   const handleFetch = async () => {
-    const res = await axios.get(`http://localhost:5000/get/${code}`);
+    const res = await axios.get(`https://onlineclipboard-dv7f.onrender.com/get/${code}`);
     setData(res.data);
   };
 

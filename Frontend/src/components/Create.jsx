@@ -52,7 +52,7 @@ function Create() {
     formData.append("text", text);
     if (file) formData.append("file", file);
 
-    const res = await axios.post("http://localhost:5000/create", formData);
+    const res = await axios.post("https://onlineclipboard-dv7f.onrender.com/create", formData);
     setCode(res.data.code);
   };
 
